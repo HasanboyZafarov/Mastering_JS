@@ -38,8 +38,6 @@ I structured my journey in phases:
 - Modules and Tooling (import/export, bundlers)
 
 
-See the `/projects` folder for code and explanations.
-
 ## 🔧 Tools & Stack
 
 - JavaScript (Vanilla)
@@ -47,14 +45,6 @@ See the `/projects` folder for code and explanations.
 - Git & GitHub
 - VSCode
 
-## ✍️ What You'll Find Here
-
-| Folder/File | Description |
-|-------------|-------------|
-| `/notes` | My hand-written notes and code explanations |
-| `/projects` | All the JavaScript projects I built |
-| `/challenges` | Coding exercises, challenges, and solutions |
-| `/references` | Useful links, cheat sheets, and resources I used |
 
 ## 📅 Timeline
 
