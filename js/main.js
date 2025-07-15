@@ -403,26 +403,63 @@
 
 // (3)
 
-let output = fizzBuzz(20) // true is not a number, so it should return 'Not a number'
-console.log(output); // Not a number    
+// let output = fizzBuzz(12) // true is not a number, so it should return 'Not a number'
+// console.log(output); // Not a number
 
-function fizzBuzz(input) {
-    if (typeof (input) !== 'number') {
-        return 'Not a number';
-    } else {
-        if (input % 3 === 0 && input % 5 === 0) {
-            return 'FizzBuzz';
+// function fizzBuzz(input) {
+//     if (typeof (input) !== 'number') {
+//         return 'Not a number';
+//     } else {
+//         if (input % 3 === 0 && input % 5 === 0) {
+//             return 'FizzBuzz';
 
-        } else {
-            return input;
-        }
-        if (input % 3 === 0) {
-            return 'Fizz';
+//         } else if (input % 3 === 0) {
+//             return 'Fizz';
 
-        }
-        if (input % 5 === 0) {
-            return 'Buzz';
+//         } else if (input % 5 === 0) {
+//             return 'Buzz';
 
-        }
-    }
-}
+//         } else {
+//             return input;
+//         }
+//     }
+// }
+
+// (4)
+
+// checkSpeed(75) // 12 points
+
+// function checkSpeed(speed) {
+//     const speedLimit = 70;
+//     const speedLimitPoints = 5;
+//     if (speed < speedLimit + speedLimitPoints) {
+//         console.log('Ok');
+//         return;
+//     } else {
+//         let points = Math.floor((speed - 70) / speedLimitPoints)
+//         if (points >= 12) {
+//             console.log('Your licence suspended');
+//         } else {
+//             console.log(`You have: ${points} points!`);
+//         }
+//     }
+// }
+
+// (5)
+// showNumbers(10)
+
+// function showNumbers(limit) {
+//     for (let i = 0; i <= limit; i++) console.log(i, i % 2 == 0 ? 'Even' : 'Odd');
+// }
+
+
+// (6)
+// countTruthy([0, null, undefined, '', 'Hello World',2, 3, 4])
+
+// function countTruthy(array) {
+//     let count = 0;
+//     for (let value of array) {
+//         if (value) count++;
+//     }
+//     console.log(count);
+// }
