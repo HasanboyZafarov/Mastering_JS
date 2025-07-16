@@ -297,9 +297,8 @@
 // Strings in JavaScript are immutable, meaning they cannot be changed after they are created. However, we can create new strings based on existing ones using various string methods.
 
 // String primitive 
-const message = 'This is my first message';
+// const message = 'This is my first message';
 
 
-// String object
-new String('Hello, World!'); // Creating a string object
-
+// // String object
+// new String('Hello, World!'); // Creating a string object
