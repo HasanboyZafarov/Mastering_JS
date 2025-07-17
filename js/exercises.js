@@ -411,18 +411,18 @@
 // (7)
 // Create a function count which includes a nested function plusOne that adds 1 to the input number.
 
-function countFunc(n) {
-    function plusOne(x) {
-        return x + 1
-    }
-    return plusOne(n);
-}
+// function countFunc(n) {
+//     function plusOne(x) {
+//         return x + 1
+//     }
+//     return plusOne(n);
+// }
 
-let one = countFunc(0) // 1
-let another = countFunc(5) // 6
+// let one = countFunc(0) // 1
+// let another = countFunc(5) // 6
 
-console.log(one);
-console.log(another);
+// console.log(one);
+// console.log(another);
 
 
 
@@ -430,26 +430,140 @@ console.log(another);
 // (8)
 // Create a function called multiplyArray that takes an array of numbers and returns the result of multiplying all elements together.
 
+// function multiplyArray(arr) {
+//     let box = 1; // so that, if we write 0, we cant actually multiply 0 to other numbers
+//     for (let number of arr) {
+//         console.log(number);
+//         box *= number;
+//     }
+//     return box;
+// }
+// let array = [1, 2, 3, 4]
+
+// console.log(multiplyArray(array));
+
+
 // Example:
 // multiplyArray([1, 2, 3, 4]) → 24
 
 // (9)
 // Create a function isEven that takes a number and returns true if it’s even, otherwise false.
 
+
+// function isEven(n) {
+//     return n % 2 == 0 ? true : false
+// }
+// console.log(isEven(7));
+
 // (10)
 // Create a function capitalize that takes a string and returns it with the first letter capitalized.
+// function firstCap(string) {
+//     let index = 0;
+//     let objStr = [];
+//     for (let letter of string) {
+//         if (index == 0) {
+//             objStr.push(letter.toUpperCase())
+//         } else {
+//             objStr.push(letter)
+//         }
+//         index++
+//     }
+//     let newStr = '';
+//     return newStr = objStr.join('');
+// }
+// console.log(firstCap('hasanboy'));
+
 
 // (11)
 // Create a function reverseString that takes a string and returns it reversed.
 
+// function reverseStr(string) {
+//     let reversed = string.split('').reverse().join('');
+//     return reversed
+// }
+
+// console.log(reverseStr('Hello World!'));
+
 // (12)
 // Write a function findMax that takes an array of numbers and returns the largest one.
+
+// function findMax(arr) {
+//     let box = 0;
+//     for (let nums = 0; nums < arr.length; nums++) {
+//         if (arr[nums] > box) {
+//             box = arr[nums]
+//         }
+//     }
+//     return box;
+// }
+
+// let array = [45, 2, 46, 4]
+// console.log(findMax(array));
+
+
 
 // (13)
 // Create a function countVowels that takes a string and returns the number of vowels (a, e, i, o, u).
 
+// function countVowels(text) {
+
+//     let a = 0;
+//     let e = 0;
+//     let i = 0;
+//     let o = 0;
+//     let u = 0;
+//     for (let letter of text) {
+//         switch (letter) {
+//             case 'a':
+//                 a++
+//                 break;
+//             case 'e':
+//                 e++
+//                 break;
+//             case 'i':
+//                 i++
+//                 break;
+//             case 'o':
+//                 o++
+//                 break;
+//             case 'u':
+//                 u++
+//                 break;
+//         }
+//     }
+//     console.log(text);
+
+//     console.log(`A: ${a}\nE: ${e}\nI: ${i}\nO: ${o}\nU: ${u}`);
+// }
+// countVowels('Hello World')
+
 // (14)
 // Create a function isPalindrome that takes a string and returns true if it’s a palindrome (reads the same forward and backward), otherwise false.
 
+
+// function isPalindrome(string) {
+//     let right = string.length
+//     for (let left = 0; left < string.length; left++) {
+//         right--
+//         if (string[left].toLowerCase() != string[right].toLowerCase()) {
+//             return 'is not palindrome!'
+//         }
+//     }
+//     return 'is palindrome!'
+// }
+
+// console.log(isPalindrome('check')); // is not palindrome!
+
+
 // (15)
 // Write a function removeDuplicates that takes an array and returns a new array with duplicates removed.
+
+// let arr = [1, 2, 5, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 3, 5]
+// let removeDups = []
+// for (let i = 0; i < arr.length; i++) {
+//     if (!removeDups.includes(arr[i])) {
+//         removeDups.push(arr[i]);
+//     }
+// }
+
+// console.log(removeDups);
