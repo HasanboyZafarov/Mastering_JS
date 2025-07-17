@@ -280,16 +280,26 @@
 // function square(n) {
 //     // TODO: Agar n raqam bo‘lmasa, throw new Error("Faqat raqam kiriting")
 //     // Aks holda, n * n qaytaring
+//     if (typeof n !== 'number') {
+//         throw new Error('N is not a Number');
+//     }
+//     return n * n
 // }
 
-// // (7)
 // try {
-//     // throw new Error("Bu xatolik")
+//     console.log(square(5));
+// } catch (error) {
+//     console.log(error.message);
+// }
+
+// (7)
+// try {
+//     throw new Error("Bu xatolik")
 // } catch (e) {
 //     console.log("Xatolik ushlanib olindi:", e.message);
 // }
 
-// // TODO: Bu qatorda "Dastur davom etmoqda..." chiqishi kerak
+// TODO: Bu qatorda "Dastur davom etmoqda..." chiqishi kerak
 
 
 // // (8)
@@ -316,3 +326,130 @@
 //   // try/catch orqali uni tuting va kodini, message'ini chiqaring
 // }
 
+
+// function validateUser(user) {
+//     if (!user.name || !user.age) {
+//         throw new Error("Wrong object!");
+
+//     }
+//     return 'Working!'
+// }
+
+// try {
+//     user = {
+//         name: 'Hasanboy',
+//     };
+//     console.log(validateUser(user));
+
+
+// } catch (error) {
+//     console.log(error.message);
+
+// }
+
+// (1)
+// Create a function called helloWorld that returns the string "Hello, world!"
+
+// function helloWorld() {
+//     console.log('Hello World!');
+
+// }
+// helloWorld();
+
+// (2)
+// Create a function square that returns the square of a given number.
+
+// function square(n) {
+//     return n * n
+// }
+
+// console.log(square(4));
+
+
+// (3)
+// Create a function sum that takes two numbers and returns their sum.
+
+// function sum(a, b) {
+//     return a + b;
+// }
+
+// console.log(sum(5, 4));
+
+
+// (4)
+// Create an arrow function greet that takes a name and returns a greeting like "Hello, [name]".
+
+// let name = prompt('Your name?')
+
+// function greet(name) {
+//     return `Hello ${name}`
+// }
+// console.log(greet(name));
+
+
+// (5)
+// Create a function isEvenOrOdd that returns "Even" if the number is even, otherwise "Odd".
+
+// function isEvenOrOdd(n) {
+//     if (n % 2 == 0) return 'Even'
+//     return 'Odd'
+// }
+
+// console.log(isEvenOrOdd(7));
+
+
+// (6)
+// Create a function min that returns the smaller of two numbers.
+// function backMin(a, b) {
+//     if (a > b) return a
+//     return b
+// }
+
+// console.log(backMin(10, 11));
+
+
+// (7)
+// Create a function count which includes a nested function plusOne that adds 1 to the input number.
+
+function countFunc(n) {
+    function plusOne(x) {
+        return x + 1
+    }
+    return plusOne(n);
+}
+
+let one = countFunc(0) // 1
+let another = countFunc(5) // 6
+
+console.log(one);
+console.log(another);
+
+
+
+
+// (8)
+// Create a function called multiplyArray that takes an array of numbers and returns the result of multiplying all elements together.
+
+// Example:
+// multiplyArray([1, 2, 3, 4]) → 24
+
+// (9)
+// Create a function isEven that takes a number and returns true if it’s even, otherwise false.
+
+// (10)
+// Create a function capitalize that takes a string and returns it with the first letter capitalized.
+
+// (11)
+// Create a function reverseString that takes a string and returns it reversed.
+
+// (12)
+// Write a function findMax that takes an array of numbers and returns the largest one.
+
+// (13)
+// Create a function countVowels that takes a string and returns the number of vowels (a, e, i, o, u).
+
+// (14)
+// Create a function isPalindrome that takes a string and returns true if it’s a palindrome (reads the same forward and backward), otherwise false.
+
+// (15)
+// Write a function removeDuplicates that takes an array and returns a new array with duplicates removed.
