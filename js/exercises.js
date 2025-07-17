@@ -190,3 +190,129 @@
 // } catch (error) {
 //     console.log('Xato:', error.message);
 // }
+
+// (1)
+// function divide(a, b) {
+//     // TODO: Agar b nol bo‘lsa, "Nolga bo‘lish mumkin emas" degan xatolikni throw qiling
+//     // Aks holda, a / b qaytaring
+
+//     if (a === 0 || b === 0) {
+//         throw new Error("Nolga bo‘lish mumkin emas");
+//     }
+//     return a / b;
+// }
+
+// try {
+//     let result = divide(10, 0)
+//     console.log('Natija:', result);
+
+// } catch (error) {
+//     console.log('Xato:', error.message);
+
+// }
+
+// (2)
+// function greet(name) {
+//     // TODO: Agar name bo‘sh yoki undefined bo‘lsa, "Ism kiritilmadi" xatosini ot
+//     // Aks holda, `console.log("Salom, " + name)`
+//     if (name == undefined) {
+//         throw new Error('Ism kiritilmadi!');
+//     }
+//     return name
+// }
+
+// try {
+//     console.log('Hello!', greet('Hasanboy'));
+
+// } catch (error) {
+//     console.log(error.message);
+// }
+
+
+// (3)
+// TODO: greet() funksiyasini name = null bilan chaqiring
+// try/catch blokida uni ushlab, console.log orqali xato matnini chiqaring
+
+// function greet(name) {
+//     if (name == null) {
+//         throw new Error("Name can't be Null");
+//     }
+//     return name
+// }
+// try {
+//     console.log(greet(null));
+
+// } catch (error) {
+//     console.log(error.message);
+// }
+
+// (4)
+// function checkPassword(pw) {
+//     // TODO: Parol uzunligi 8 tadan kam bo‘lsa, throw new Error("Parol juda qisqa")
+//     // Aks holda: "Parol qabul qilindi" ni qaytaring
+//     if (pw.length < 8) {
+//         throw new Error("Password is short");
+//     }
+//     return 'Good';
+// }
+
+// try {
+//     console.log(checkPassword('12345678'));
+
+// } catch (error) {
+//     console.log(error.message)
+// }
+
+
+// (5)
+// TODO: JSON.parse(data) bilan ishlang, try/catch orqali xatoni ushlang
+
+// let data = '{name: "Ali"}'; // Bu noto‘g‘ri JSON
+// try {
+//     JSON.parse(data)
+//     throw new Error('Wrong object model');
+// } catch (error) {
+//     console.log(error.message);
+// }
+
+
+// // (6)
+// function square(n) {
+//     // TODO: Agar n raqam bo‘lmasa, throw new Error("Faqat raqam kiriting")
+//     // Aks holda, n * n qaytaring
+// }
+
+// // (7)
+// try {
+//     // throw new Error("Bu xatolik")
+// } catch (e) {
+//     console.log("Xatolik ushlanib olindi:", e.message);
+// }
+
+// // TODO: Bu qatorda "Dastur davom etmoqda..." chiqishi kerak
+
+
+// // (8)
+// try {
+//     // throw new Error("Qandaydir xatolik")
+// } catch (e) {
+//     console.log("Xato:", e.message);
+// } finally {
+//     // TODO: Har doim ishlaydigan qator yozing (masalan: "Tugatildi")
+// }
+
+
+// // (9)
+// function validateUser(user) {
+//     // TODO: Agar user.name va user.age mavjud bo‘lmasa, xato oting
+//     // Aks holda, "Foydalanuvchi to‘g‘ri" deb qaytaring
+// }
+
+
+// (10)
+
+// function customThrow() {
+//   // TODO: `throw { code: 403, message: "Taqiqlangan" }`
+//   // try/catch orqali uni tuting va kodini, message'ini chiqaring
+// }
+
