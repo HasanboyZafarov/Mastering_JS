@@ -296,9 +296,58 @@
 // Strings
 // Strings in JavaScript are immutable, meaning they cannot be changed after they are created. However, we can create new strings based on existing ones using various string methods.
 
-// String primitive 
+// String primitive
 // const message = 'This is my first message';
 
 
 // // String object
 // new String('Hello, World!'); // Creating a string object
+
+
+// const message = 'This is my first\n message !'
+
+
+// console.log(message.split(' '));
+
+// console.log(message);
+
+
+
+// Template Literals
+
+// const message = 'This is my first\n message !'
+
+
+// Object {}
+// Boolean true, false
+// String '', ""
+// Template ``
+// Template is very useful for emailing or bot chatting
+// let name = 'Hasanboy'
+// const another = `Hi ${name}!
+
+// line and what about
+
+// third line ?`
+
+// console.log(another);
+
+
+
+
+// Date
+
+
+// const now = new Date();
+
+// const date1 = new Date('Mart 11 2019 22:00');
+
+// const date2 = new Date(2025, 6, 19, 19, 20)
+
+// now.setFullYear(2024)
+
+// console.log(now);
+
+// console.log(date1);
+
+// console.log(date2);

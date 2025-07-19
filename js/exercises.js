@@ -567,3 +567,64 @@
 // }
 
 // console.log(removeDups);
+
+
+
+
+
+// Object Exercises
+
+
+// const address = {
+//     street: 'Beshkoprik',
+//     city: 'Tashkent',
+//     zipCode: '123456',
+// }
+
+// function showAddress(address) {
+//     for (let key in address)
+//         console.log(`${key}: ${address[key]}`);
+// }
+
+// showAddress(address)
+
+
+// function createAddress(street, city, zipCode) {
+//     return {
+//         street: street,
+//         city: city,
+//         zipCode: zipCode
+//     }
+// }
+
+// const firstAdd = createAddress('Toshtemir', 'Buxoro', 1234)
+
+// console.log(firstAdd);
+
+
+function CreateAddress(street, city, zipCode) {
+    this.street = street;
+    this.city = city;
+    this.zipCode = zipCode;
+}
+
+// const anotherAdd = new createAddress('Teshavoy', 'Andijon', 576)
+
+// console.log(anotherAdd);
+
+
+
+// let address1 = new CreateAddress('a', 'b', 'c')
+// // let address2 = new CreateAddress('a', 'b', 'c')
+// let address2 = address1
+
+// function areEqual(address1, address2) {
+//     for (let key in address1)
+//         return address1[key] == address2[key]
+// }
+
+// function areSame(address1, address2) {
+//     return address1 === address2
+// }
+// console.log(areEqual(address1, address2));
+// console.log(areSame(address1, address2));
