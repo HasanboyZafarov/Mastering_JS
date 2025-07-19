@@ -628,3 +628,71 @@ function CreateAddress(street, city, zipCode) {
 // }
 // console.log(areEqual(address1, address2));
 // console.log(areSame(address1, address2));
+
+
+
+
+// title
+// body
+// author
+// views
+// comments - (author, body)
+// isLive
+
+// const myBlog = {
+//     title: 'Here is the new vocabs!',
+//     body: 'Here is some lorem about course',
+//     author: 'Hasanboy',
+//     views: 100,
+//     comments: [{
+//         author: 'a',
+//         body: 'b'
+//     }, {
+//         author: 'c',
+//         body: 'd'
+//     }],
+//     isLive: true
+// }
+
+// console.log(myBlog);
+
+
+// function BlogPost(title, body, author, views, comments, isLive) {
+//     this.title = title;
+//     this.body = body;
+//     this.author = author;
+//     this.views = views;
+//     this.comments = comments;
+//     this.isLive = true
+//     this.isPublished = false
+// }
+
+
+// const draft1 = new BlogPost('New post', 'This is Draft', 'Hasanboy', 99, [{
+//     author: 'a',
+//     body: 'b'
+// }, {
+//     author: 'c',
+//     body: 'd'
+//     }]);
+
+// draft1.isPublished = true;
+// console.log(draft1);
+
+
+// let priceRanges = [{
+//     label: '$',
+//     tooltip: 'Inexpensive',
+//     minPerPerson: 0,
+//     maxPerPerson: 10,
+// }, {
+//     label: '$$',
+//     tooltip: 'Moderate',
+//     minPerPerson: 11,
+//     maxPerPerson: 20,
+// }, {
+//     label: '$$$',
+//     tooltip: 'Expensive',
+//     minPerPerson: 21,
+//     maxPerPerson: 50,
+// }]
