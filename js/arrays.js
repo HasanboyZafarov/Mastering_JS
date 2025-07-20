@@ -44,3 +44,130 @@
 // console.log(numbers.includes(5)); // true, number 5 includes
 
 
+// When we use indexOf() -> here we can pass 2 values, that means indexOf(1 - the thing that should find, second value is -> the start index)
+
+// console.log(numbers.indexOf(2, 4)); // it start finding from the 4 index
+
+
+
+// Finding elements (reference types)
+
+// let courses = [{
+//         id: 1,
+//         name: 'a'
+//     },
+//     {
+//         id: 2,
+//         name: 'b'
+//     }
+// ];
+
+// console.log(
+//     courses.includes({
+//         id: 1,
+//         name: 'a'
+//     })
+// );
+
+// const course = courses.find(function (course) {
+//     return course.name === 'a'
+// })
+
+// const courseIndex = courses.findIndex(function (course) {
+//     return course.name === 'a'
+// })
+
+// console.log(course);
+
+// console.log(courseIndex);
+
+
+
+// Arrow Function
+
+// const course = courses.findIndex(course => course.name === 'a')
+
+// console.log(course);
+
+
+
+// Removing Elements
+
+// const numbers = [1, 2, 3, 4]
+
+// console.log(numbers);
+
+// // End
+// const last = numbers.pop()
+
+// console.log(last);
+
+// // Beginning
+
+// const first = numbers.shift()
+
+// console.log(first);
+
+// Middle
+
+// const middle = numbers.splice(1, 1)
+
+// console.log(numbers); // [1, 3, 4]
+
+
+
+// Emptying an Arrays
+
+
+// Solution 1
+// const numbers = [1, 2, 3, 4]
+// let another = numbers;
+// numbers = []
+
+
+// Solution 2
+// numbers.length = 0 => the best way
+
+
+// Solution 3
+// numbers.splice(0, numbers.length)
+
+
+// Solution 4
+// while (numbers.length > 0) {
+//     numbers.pop()
+// }
+// console.log(another);
+// console.log(numbers);
+
+
+// Combining Arrays
+
+// const first = [{
+//     id: 1
+// }]
+// const second = [4, 5, 6]
+
+// let combined = first.concat(second)
+// // if we go to the first array, we get reference type, if we pass the object
+// let sliced = combined.slice(2, 4)
+// let sliced_1 = combined.slice(2) // slicing it from 2 index
+// let sliced_2 = combined.slice() // copying fully
+// // If we use primitive types, it copies from value, if reference type, it copies by its reference
+
+// // console.log(first);
+// // console.log(second);
+
+// console.log(combined);
+// console.log(sliced);
+
+
+// the Spread Operator
+
+// const first = [1, 2, 3]
+
+// const second = [4, 5, 6]
+
+// const combined = [...first, 'a', ...second, 'b']
+
+// console.log(combined);
