@@ -171,3 +171,86 @@
 // const combined = [...first, 'a', ...second, 'b']
 
 // console.log(combined);
+
+
+// Iterating an Array
+
+
+// In order to iterate array, we use for...of
+
+// const numbers = [1, 2, 3]
+
+// for (let number of numbers) {
+//     console.log(number);
+// }
+
+// numbers.forEach((number, index) => console.log(index, number))
+
+
+
+
+// Joining Arrays
+
+// const numbers = [1, 2, 3]
+
+// const joined = numbers.join(', ')
+
+// console.log(joined);
+
+
+
+// const message = 'This is my first message';
+
+// const parts = message.split(' ')
+
+// console.log(parts);
+
+// const combined = parts.join('-')
+
+// console.log(combined);
+
+
+
+// Sorting Arrays
+
+// const numbers = [2, 3, 1]
+
+// console.log(numbers);
+// numbers.sort()
+
+// console.log(numbers);
+
+
+// numbers.reverse()
+
+// console.log(numbers);
+
+
+const cources = [{
+        id: 1,
+        name: 'Node.js'
+    },
+    {
+        id: 2,
+        name: 'JavaScript'
+    }
+]
+
+const numbers = [50, 30, 20, 11, 15]
+const sorted = numbers.sort((a, b) => a - b);
+
+cources.sort(function (a, b) {
+
+    // a < b => -1
+    // a > b => 1
+    // a === b => 0
+    
+    let nameA = a.name.toLowerCase()
+    let nameB = b.name.toLowerCase()
+
+    if (nameA < nameB) return -1;
+})
+
+console.log(cources);
+
+console.log(sorted);
