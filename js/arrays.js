@@ -226,31 +226,72 @@
 // console.log(numbers);
 
 
-const cources = [{
-        id: 1,
-        name: 'Node.js'
-    },
-    {
-        id: 2,
-        name: 'JavaScript'
-    }
-]
+// const cources = [{
+//         id: 1,
+//         name: 'Node.js'
+//     },
+//     {
+//         id: 2,
+//         name: 'JavaScript'
+//     }
+// ]
 
-const numbers = [50, 30, 20, 11, 15]
-const sorted = numbers.sort((a, b) => a - b);
+// const numbers = [50, 30, 20, 11, 15]
+// const sorted = numbers.sort((a, b) => a - b);
 
-cources.sort(function (a, b) {
+// cources.sort(function (a, b) {
 
-    // a < b => -1
-    // a > b => 1
-    // a === b => 0
-    
-    let nameA = a.name.toLowerCase()
-    let nameB = b.name.toLowerCase()
+// a < b => -1
+// a > b => 1
+// a === b => 0
 
-    if (nameA < nameB) return -1;
-})
+//     let nameA = a.name.toLowerCase()
+//     let nameB = b.name.toLowerCase()
 
-console.log(cources);
+//     if (nameA < nameB) return -1;
+// })
 
-console.log(sorted);
+// console.log(cources);
+
+// console.log(sorted);
+
+
+// Как работает sort()?
+// Метод sort() в JavaScript сравнивает два элемента за раз — a и b.
+
+// Функция сравнения должна возвращать:
+
+// Отрицательное число (< 0) — если a должно быть перед b
+
+// Положительное число (> 0) — если a должно быть после b
+
+// 0 — если порядок не меняется
+
+
+
+
+
+// Testing the elements of Array
+
+
+// const numbers = [1, 0, 3, 1, 2, 3, 4]
+
+// const allPositive = numbers.every(function (value) {
+//     return value >= 0
+// })
+
+// every() - this call back function, it checks every element matches the criteria
+// some() - this is also call back function, but it checks if it there, like it works same as LOGICAL OR - || - like this
+
+// console.log(allPositive);
+
+
+// Filtering an Array
+
+
+// const numbers = [1, 2, -1, 3, 4, 5]
+
+// let filtered = numbers.filter(n => n >= 0)
+
+
+// console.log(filtered); // [1, 2, 3, 4, 5] - Here, the filter() - method -> deleted the -1
