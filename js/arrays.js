@@ -295,3 +295,75 @@
 
 
 // console.log(filtered); // [1, 2, 3, 4, 5] - Here, the filter() - method -> deleted the -1
+
+
+
+
+// Mapping an Array
+
+
+let numbers = [1, 2, 3, 4, 5]
+
+const doubled = numbers.map(num => num * 2)
+
+console.log(doubled);
+
+
+
+
+
+// Здесь:
+
+//     numbers— исходный массив.
+
+//     .map()— метод, который перебирает каждый элемент.
+
+//      num * 2— преобразование, которое мы делаем с каждым элементом.
+
+//      doubled— новый массив с изменёнными значениями.
+
+
+let users = [{
+    name: 'Hasanboy',
+    age: 20
+}, {
+    name: 'John',
+    age: 35
+}]
+
+
+const user_Names = users.map(user => user.name)
+
+console.log(user_Names);
+
+
+
+let products = [{
+    id: 1,
+    name: 'Laptop',
+    price: 500
+}, {
+    id: 2,
+    name: 'Phone',
+    price: 250
+}, {
+    id: 3,
+    name: 'PC',
+    price: 750
+}]
+
+
+// const id_And_Price = products.map(product => ({
+//     id: product.id,
+//     price: product.price
+// }))
+
+// console.log(id_And_Price);
+
+
+// const id_And_Price = products.map(products => ([products.name, products.price]))
+
+// console.log(id_And_Price);
+
+
+const product_info = products.map(product => `${}`)
