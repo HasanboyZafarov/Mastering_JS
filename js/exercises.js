@@ -698,3 +698,163 @@ function CreateAddress(street, city, zipCode) {
 // }]
 
 
+// Arrays
+
+
+// arrayFromRange
+
+// let numbers = arrayFromRange(-10, 5)
+
+// function arrayFromRange(min, max) {
+//     let array = []
+//     for (let i = min; i <= max; i++) array.push(i)
+//     return array
+// }
+
+// console.log(numbers);
+
+
+// Includes - function
+
+// let array = [1, 2, 3, 4, 42, 42, 442, 4, 324, 2, 432, 4, 24, 3, 24, 2, 42, 3, 4, 21, 2, 1, 31, 32, 14, 24, 5]
+
+// let result = include(array,5)
+
+// function include(array, searchElement) {
+//     for (let key of array)
+//         if (searchElement == key) return true
+//     return false
+// }
+
+// console.log(result);
+
+
+
+
+// Exclude - function
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// const output = except(numbers, [1, 2, 7, 9])
+
+// function except(array, excluded) {
+//     let new_arr = []
+
+//     for (let num of numbers) {
+//         if (!excluded.includes(num)) new_arr.push(num)
+//     }
+//     return new_arr
+// }
+
+// console.log(output);
+
+
+
+// Offset function
+
+// const numbers = [1, 2, 3, 4, 5]
+// const output = move(numbers, 2, -2)
+
+// function move(array, index, offset) {
+//     const position = index + offset;
+//     if (position >= array.length) {
+//         console.error('Invailid Offset');
+//         return;
+//     }
+
+//     const output = [...array]
+//     const element = output.splice(index, 1)[0]
+//     output.splice(position, 0, element)
+
+//     return output;
+
+// }
+
+// console.log(output);
+
+
+// Count Occurrences Function with Reduce
+
+
+// const numbers = [5, 2, 2, 3, 4, 5, 6, 1]
+// const count = countOccurrences(numbers, 1)
+
+// function countOccurrences(array, searchElement) {
+//     // let box = 0;
+//     // for (let n = 0; n < array.length; n++)
+//     //     if (array[n] == searchElement) box++
+//     // return box
+
+//     return array.reduce((accumulator, current) => {
+//         const occurence = (current == searchElement) ? 1 : 0;
+//         console.log(accumulator, current, searchElement);
+
+//         return accumulator + occurence
+//     }, 0)
+// }
+
+
+// console.log(count);
+
+
+
+
+// Get Max
+
+// const numbers = [5, 2, 100, 3, 4, 5, 6, 1, 21, 5125, 1, 512, 51, 5, 21, 512, 51, 9999]
+// const max = getMax(numbers)
+
+// console.log(max);
+
+
+// function getMax(array) {
+//     if (array.length === 0) return undefined;
+//     return array.reduce((acc, current) => (acc > current) ? acc : current)
+// }
+
+// let box = array[0];
+// array.reduce((acc, current) => {
+//     current >= box ? box = current : box += 0;
+//     return acc + current
+// }, 0)
+// return box
+
+
+
+// Movies
+
+const movies = [{
+        title: 'a',
+        year: 2018,
+        rating: 4.5
+    },
+    {
+        title: 'b',
+        year: 2018,
+        rating: 4.7
+    },
+    {
+        title: 'c',
+        year: 2018,
+        rating: 3
+    },
+    {
+        title: 'd',
+        year: 2017,
+        rating: 4.5
+    }
+]
+
+// All the movies in 2018 with rating > 4
+// Sort them by their rating
+// Descending order
+// Pick their title
+
+
+// const titles = movies
+//     .filter(movie => movie.year === 2018 && movie.rating >= 4)
+//     .sort((a, b) => a.rating - b.rating)
+//     .reverse()
+//     .map(movie => movie.title)
+
+// console.log(titles);
