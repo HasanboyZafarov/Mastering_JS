@@ -297,16 +297,14 @@
 // console.log(filtered); // [1, 2, 3, 4, 5] - Here, the filter() - method -> deleted the -1
 
 
-
-
 // Mapping an Array
 
 
-let numbers = [1, 2, 3, 4, 5]
+// let numbers = [1, 2, 3, 4, 5]
 
-const doubled = numbers.map(num => num * 2)
+// const doubled = numbers.map(num => num * 2)
 
-console.log(doubled);
+// console.log(doubled);
 
 
 
@@ -323,34 +321,33 @@ console.log(doubled);
 //      doubled— новый массив с изменёнными значениями.
 
 
-let users = [{
-    name: 'Hasanboy',
-    age: 20
-}, {
-    name: 'John',
-    age: 35
-}]
+// let users = [{
+//     name: 'Hasanboy',
+//     age: 20
+// }, {
+//     name: 'John',
+//     age: 35
+// }]
 
 
-const user_Names = users.map(user => user.name)
+// const user_Names = users.map(user => user.name)
 
-console.log(user_Names);
+// console.log(user_Names);
 
 
-
-let products = [{
-    id: 1,
-    name: 'Laptop',
-    price: 500
-}, {
-    id: 2,
-    name: 'Phone',
-    price: 250
-}, {
-    id: 3,
-    name: 'PC',
-    price: 750
-}]
+// let products = [{
+//     id: 1,
+//     name: 'Laptop',
+//     price: 500
+// }, {
+//     id: 2,
+//     name: 'Phone',
+//     price: 250
+// }, {
+//     id: 3,
+//     name: 'PC',
+//     price: 750
+// }]
 
 
 // const id_And_Price = products.map(product => ({
@@ -366,4 +363,92 @@ let products = [{
 // console.log(id_And_Price);
 
 
-const product_info = products.map(product => `${}`)
+// const product_info = products.map(product => `Id: ${product.id}, Цена: ${product.price}`)
+
+// console.log(product_info);
+
+
+// const idAndPrice = products.map(({ id, price }) => ({ id, price }));
+
+// console.log(idAndPrice);
+// [{ id: 1, price: 500 }, { id: 2, price: 1200 }]
+
+
+// const items = ['Home', 'About', 'Contact']
+
+// const htmlList = items.map(item => `<li>${item}</li>`).join('');
+
+// console.log(htmlList);
+
+
+// 🔹 Представь ситуацию
+// Ты делаешь сайт. У тебя есть меню (или список товаров, постов, пользователей), и ты хочешь его показать на странице:
+
+// const items = ['Главная', 'О нас', 'Контакты'];
+// 🔸 Без .map() тебе пришлось бы писать вот так:
+
+// <li>Главная</li>
+// <li>О нас</li>
+// <li>Контакты</li>
+
+// Но что, если у тебя 50 пунктов? Или они приходят из сервера? Ручками писать — 💀.
+
+// 🔸 С .map() — ты автоматизируешь:
+
+// const htmlList = items.map(item => `<li>${item}</li>`).join('');
+// 📌 Это создаёт HTML для каждого пункта — автоматически.
+
+// 🔹 Зачем это нужно тебе?
+// Ситуация	Что даёт .map()
+// У тебя много данных (товары, пользователи, посты и т.д.)	Быстро превращаешь их в HTML
+// Данные приходят с сервера (API)	Показываешь их на сайте
+// Ты хочешь обновлять данные динамически	Без ручного кода всё работает
+// Ты используешь React	.map() используется в каждом компоненте
+
+// 🔸 Простой пример в жизни:
+// Ты делаешь сайт для курсов. Курсы у тебя в массиве:
+
+
+// const courses = ['HTML', 'CSS', 'JavaScript'];
+// С помощью .map() ты за 1 строку кода получаешь список на экране:
+
+
+// <ul>
+//   ${courses.map(c => `<li>${c}</li>`).join('')}
+// </ul>
+// 🔚 Вывод:
+// .map() — это как «копировать и вставить» для программиста:
+// быстро создаёшь однотипные части, не повторяя код руками.
+
+// Хочете — покажу реальный пример прямо в HTML-файле или в React.
+
+
+
+// const numbers = [1, 2, 3, 4, -2, -5]
+
+// const item = numbers.filter(n => n >= 0).map(n => ({
+//     value: n
+// }))
+
+// console.log(item);
+
+
+// Reducing an Array
+
+
+// const numbers = [1, 2, 3]
+// let sum = 0;
+
+// for (let n of numbers) sum += n;
+
+// console.log(sum);
+
+// a = 0, c = 1 => a = 1
+// a = 1, c = 2 => a = 3
+// a = 3, c = 3 => a = 6
+
+// let result = numbers.reduce((accumulator, currentValue) => {
+//     return accumulator + currentValue
+// }, 0)
+
+// console.log(result);
