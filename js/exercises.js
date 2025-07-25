@@ -1060,6 +1060,18 @@ function CreateAddress(street, city, zipCode) {
 // 4. Sort an array of strings alphabetically
 // Input: ['banana', 'apple', 'cherry'] → Output: ['apple', 'banana', 'cherry']
 
+// let sort = ['banana', 'apple', 'cherry']
+// let sorted = sort.sort()
+
+// console.log(sorted);
+
+// let cities = ['Ярославль', 'Москва', 'Архангельск']
+
+// cities.sort((a, b) => a.localeCompare(b, 'ru'))
+
+// console.log(cities);
+
+
 // 6. Calculate the sum of all numbers using .reduce()
 // Input: [1, 2, 3, 4] → Output: 10
 
@@ -1099,6 +1111,69 @@ function CreateAddress(street, city, zipCode) {
 // console.log(mergeTwo(first_Arr, second_Arr));
 
 
+
+// 11. Удвоить только чётные числа
+// Input: [1, 2, 3, 4] → Output: [1, 4, 3, 8]
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// function returnDouble(array) {
+//     let new_Arr = array.map(num => num % 2 == 0 ? num * 2 : num)
+//     return new_Arr
+// }
+// console.log(returnDouble(numbers));
+
+
+// 12. Найти индекс первого элемента, больше 10
+// Input: [4, 9, 15, 2] → Output: 2
+
+// let numbers = [1, 2, 0, 0, 10]
+
+// function findTen(array) {
+//     for (let key = 0; key < array.length; key++) {
+//         if (array[key] >= 10) {
+//             return key
+//         }
+//     }
+// }
+
+
+// console.log(findTen(numbers));
+
+
+// 13. Преобразовать массив строк в один текст через запятую
+// Input: ['apple', 'banana', 'cherry'] → Output: 'apple,banana,cherry'
+
+// let fruits = ['apple', 'banana', 'cherry'];
+// let str = fruits.join(',')
+
+// console.log(str);
+
+
+// 14. Найти среднее значение всех чисел в массиве
+// Input: [2, 4, 6, 8] → Output: 5
+
+// let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// let box = 0
+// for (let num of nums) {
+//     box += num
+// }
+// console.log(box / nums.length);
+
+// 15. Отсортировать массив объектов по значению свойства
+// Input: [{name: 'Alex', age: 22}, {name: 'Ivan', age: 19}]
+// Output: [{name: 'Ivan', age: 19}, {name: 'Alex', age: 22}]
+
+// let users = [{
+//     name: 'Alex',
+//     age: 22
+// }, {
+//     name: 'Ivan',
+//     age: 19
+// }]
+
+// let new_Arr = users.sort((a, b) => a.age - b.age)
+// console.log(new_Arr);
 
 
 // Flatten a nested array (one level deep).
