@@ -1176,6 +1176,129 @@ function CreateAddress(street, city, zipCode) {
 // console.log(new_Arr);
 
 
+// 1. Reverse an array without using .reverse()
+// const originArr = [1, 2, 3, 4, 5];
+// let reversedArr = []
+// for (let key = originArr.length - 1; key >= 0; key--) {
+//     reversedArr.push(originArr[key])
+// }
+// console.log(reversedArr);
+
+
+
+// 2. Count how many times a specific value appears in an array
+// const fruits = ['apple', 'banana', 'apple', 'orange', 'apple', 'banana'];
+// // TODO: Count how many times 'apple' appears
+
+// function countFrequence(array, string) {
+//     let box = 0;
+//     for (let key = 0; key < array.length; key++) {
+//         if (array[key] == string) {
+//             box++
+//         }
+//     }
+//     return box
+// }
+// console.log(countFrequence(fruits, 'apple'));
+
+
+// 3. Check if two arrays contain the same elements (regardless of order)
+// const arrA = [1, 2, 3, 4];
+// const arrB = [4, 3, 2, 1];
+
+// const sortedA = [...arrA].sort()
+// const sortedB = [...arrB].sort()
+
+
+// function checkSame(srtdA, srtdB) {
+//     for (let i = 0; i < sortedA.length; i++) {
+//         if (sortedA[i] !== sortedB[i]) {
+//             return false
+//         }
+//     }
+//     return true
+// }
+
+// console.log(checkSame(sortedA, sortedB));
+
+
+// TODO: Return true if they have the same elements, false otherwise
+
+// 4. Remove all falsy values from an array
+// const messyArray = [0, 'hello', false, null, 42, '', undefined, true];
+// // TODO: Return a new array with only truthy values
+// let new_Arr = []
+// for (let key of messyArray) {
+//     if (key) {
+//         new_Arr.push(key)
+//     }
+// }
+
+// console.log(new_Arr);
+
+// 5. Sum all values in a 2D array
+// const matrix = [
+//     [1, 2],
+//     [3, 4],
+//     [5, 6]
+// ];
+
+// let sum = 0;
+// for (let numbers of matrix) {
+//     for (let num of numbers) {
+//         sum += num
+//     }
+// }
+
+// console.log(sum);
+
+// TODO: Calculate the total sum of all numbers
+
+// 6. Find the first non-repeating element in an array
+// const letters = ['a', 'b', 'a', 'c', 'b', 'd'];
+// const map = new Map()
+// for (let letter of letters) {
+//     if (map.has(letter)) {
+//         map.set(letter, map.get(letter) + 1)
+//     } else {
+//         map.set(letter, 1)
+//     }
+// }
+// for (let letter of letters) {
+//     if (map.get(letter) === 1) {
+//         console.log('Here is the letter: ', letter);
+//         break
+//     }
+// }
+// TODO: Find the first element that does not repeat
+
+// 7. Merge two arrays and remove duplicates
+// const x = [1, 2, 3];
+// const y = [3, 4, 5];
+
+// const merged = [...x, ...y]
+
+// const unique = new Set(merged)
+
+
+// const result = [...unique]
+
+// console.log(result);
+
+
+
+
+// TODO: Merge and return unique values
+
+// 8. Filter out numbers less than 10
+// const numbers = [5, 10, 15, 2, 20, 8];
+// // TODO: Return array with only numbers >= 10
+
+// let new_Arr = numbers.filter(num => num >= 10)
+
+// console.log(new_Arr);
+
+
 // Flatten a nested array (one level deep).
 
 // Count the frequency of each element in an array.
