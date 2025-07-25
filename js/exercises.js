@@ -823,27 +823,27 @@ function CreateAddress(street, city, zipCode) {
 
 // Movies
 
-const movies = [{
-        title: 'a',
-        year: 2018,
-        rating: 4.5
-    },
-    {
-        title: 'b',
-        year: 2018,
-        rating: 4.7
-    },
-    {
-        title: 'c',
-        year: 2018,
-        rating: 3
-    },
-    {
-        title: 'd',
-        year: 2017,
-        rating: 4.5
-    }
-]
+// const movies = [{
+//         title: 'a',
+//         year: 2018,
+//         rating: 4.5
+//     },
+//     {
+//         title: 'b',
+//         year: 2018,
+//         rating: 4.7
+//     },
+//     {
+//         title: 'c',
+//         year: 2018,
+//         rating: 3
+//     },
+//     {
+//         title: 'd',
+//         year: 2017,
+//         rating: 4.5
+//     }
+// ]
 
 // All the movies in 2018 with rating > 4
 // Sort them by their rating
@@ -858,3 +858,265 @@ const movies = [{
 //     .map(movie => movie.title)
 
 // console.log(titles);
+
+
+
+
+// Beginner Lvl Tasks
+
+// Create an array of 5 numbers and log it.
+
+// let array = [1, 2, 3, 4, 5]
+
+// console.log(array);
+
+
+// Add a new element to the end of the array.
+
+// let array = [1, 2, 3, 4, 5]
+
+// array.push(6)
+
+// console.log(array);
+
+
+// Add a new element to the beginning of the array.
+
+// let array = [2, 3, 4, 5, 6]
+
+// array.unshift(1)
+
+// console.log(array);
+
+
+// Remove the last element from the array.
+
+// let array = [1, 2, 3, 4, 5]
+
+// array.pop()
+
+// console.log(array);
+
+
+// Remove the first element from the array.
+
+// let array = [1, 2, 3, 4, 5]
+
+// array.shift()
+
+// console.log(array);
+
+
+// Find the length of the array.
+
+// let array = [1, 2, 3, 4, 5]
+
+// console.log(array.length);
+
+
+// Access the third element of the array.
+
+// let array = [1, 2, 3, 4, 5]
+
+// console.log(array[2]);
+
+
+// Change the value of the second element.
+
+// let array = [1, 2, 3, 4, 5]
+
+// array[1] = 5
+
+// console.log(array);
+
+
+// Check if a certain element exists in the array.
+
+// let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// console.log(array.includes(7));
+
+
+// Loop through the array and log each element.
+
+// let array = [1, 2, 3, 4, 5, 6, 7, 8]
+
+// for (let num of array) {
+//     console.log(num);
+// }
+
+
+
+// Intermediate LVL Tasks
+
+// Find the sum of all numbers in an array.
+
+// let array = [1, 2, 3]
+
+// const newVal = array.reduce((accumulator, current) => {
+//     return accumulator + current
+// }, 0)
+
+// console.log(newVal);
+
+
+// Create a new array with all elements doubled.
+
+// let array = [1, 2, 3, 4, 5]
+
+// let new_array = array.map(num => num * 2)
+// console.log(new_array);
+
+
+// Filter out numbers greater than 10.
+
+// let array = [1, 2, 3, 11, 22, 33]
+
+// const filtered_Arr = array.filter(num => num > 10)
+
+// console.log(filtered_Arr) ;
+
+
+// Sort an array of numbers in ascending order.
+
+// let arr = [1, 3, 7, 2, 4, 6, 5]
+// const sorted = arr.sort((a, b) => a - b)
+// console.log(sorted);
+
+// Reverse an array.
+
+// let arr = [1, 2, 3, 4, 5]
+
+// arr.reverse()
+// console.log(arr);
+
+
+// Find the maximum number in an array.
+
+// let arr = [2, 3, 4, 5, 10, 1, 7]
+
+// let max = arr.reduce((acc, current) => (acc > current) ? acc : current)
+
+// console.log(max);
+
+
+// Find the minimum number in an array.
+
+// let arr = [2, 3, 4, 5, 10, 1, 7, -9]
+
+// let min = arr.reduce((acc, current) => (acc > current) ? current : acc)
+
+// console.log(min);
+
+
+// Merge two arrays into one.
+
+// let first_arr = [1, 2, 3]
+// let second_arr = [4, 5, 6]
+
+// let new_arr = [...first_arr, ...second_arr]
+
+// console.log(new_arr);
+
+
+// Remove duplicates from an array.
+
+// let arr = [1, 2, 3, 2, 5, 8, 4, 4, 4]
+
+// function removeDups(arr) {
+//     let new_Array = []
+
+//     for (let key of arr)
+//         if (!new_Array.includes(key))
+//             new_Array.push(key)
+
+//     return new_Array;
+// }
+
+// console.log(removeDups(arr));
+
+
+
+
+// Create a new array of only even numbers.
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+// let evenNums = numbers.filter(num => num % 2 === 0)
+
+// console.log(evenNums);
+
+
+
+// 2. Create a new array where each number is squared
+// Input: [1, 2, 3, 4] → Output: [1, 4, 9, 16]
+
+// let numbers = [1, 2, 3, 4, 5]
+// let result_Arr = numbers.map(num => num * num)
+
+// console.log(result_Arr);
+
+
+// 4. Sort an array of strings alphabetically
+// Input: ['banana', 'apple', 'cherry'] → Output: ['apple', 'banana', 'cherry']
+
+// 6. Calculate the sum of all numbers using .reduce()
+// Input: [1, 2, 3, 4] → Output: 10
+
+// let numbers = [1, 2, 3, 4]
+
+// let new_Arr = numbers.reduce((acc, current) => acc + current, 0)
+
+// console.log(new_Arr);
+
+
+// 9. Check if at least one element is divisible by 3
+// Input: [2, 4, 7, 9] → Output: true (because 9 is divisible by 3)
+// let arr = [2, 4, 7, 9]
+//     .map(num => num % 3 == 0)
+//     .filter(item => item == true)[0]
+
+// console.log(arr);
+
+
+// 10. Merge two arrays and remove duplicates
+// Input: [1, 2, 3], [3, 4, 5] → Output: [1, 2, 3, 4, 5]
+
+
+// let first_Arr = [1, 2, 3, 3, 5]
+// let second_Arr = [3, 4, 5]
+
+// function mergeTwo(first, second) {
+//     const merged_Arr = [...first]
+//     for (let key of second) {
+//         if (!first.includes(key)) {
+//             merged_Arr.push(key)
+//         }
+//     }
+//     return merged_Arr;
+// }
+
+// console.log(mergeTwo(first_Arr, second_Arr));
+
+
+
+
+// Flatten a nested array (one level deep).
+
+// Count the frequency of each element in an array.
+
+// Find the second largest number in an array.
+
+// Group array elements by type (e.g., numbers, strings, booleans).
+
+// Rotate array elements to the right by 3 positions.
+
+// Remove all falsy values from an array.
+
+// Chunk an array into subarrays of length 3.
+
+// Create a custom map function.
+
+// Create a custom filter function.
+
+// Use reduce to calculate the average of numbers.
